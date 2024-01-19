@@ -19,7 +19,7 @@ public class ExcelReadWrite {
         Workbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet(sheetName);
         addRowValue(sheet, 0, "SL. NO", "User_Name", "Password", "Status");
-        for (int i = 1; i < 100000; i++) {
+        for (int i = 1; i < 100; i++) {
             String val = UUID.randomUUID().toString();
             addRowValue(sheet, i, String.valueOf(i), val, val, "");
         }
